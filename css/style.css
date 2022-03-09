@@ -146,6 +146,9 @@ header .login-container .box{
 
 header .login-container .box:focus{
   border-color: var(--vivid-violet);
+
+header .login-container .box:focus{
+  border-color: var(--vivid-violet);
 }
 
 header .login-container label{
