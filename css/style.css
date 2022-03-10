@@ -46,17 +46,17 @@ header{
   z-index: 3;
 }
 
-header .header-logo{
+header .logo{
   display: flex;
   align-items: center;
 }
 
-header .header-logo img{
+header .logo img{
   width: 70px;
   margin: 0 .7rem 0 0;
 }
 
-header .header-logo a{
+header .logo a{
   font-size: 3rem;
   color: var(--white);
   font-weight: bolder;
@@ -146,6 +146,7 @@ header .login-container .box{
 
 header .login-container .box:focus{
   border-color: var(--vivid-violet);
+}
 
 header .login-container .box:focus{
   border-color: var(--vivid-violet);
@@ -223,6 +224,8 @@ header .login-container .btn:hover{
   }
 }
 
+
+
 @media screen and (max-width: 911px){
   header{
     padding: 2rem 5rem;
@@ -232,6 +235,8 @@ header .login-container .btn:hover{
     right: 10rem; top: 3rem;
   }
 }
+
+
 
 @media screen and (max-width: 768px){
   header #menu-bar{
@@ -267,9 +272,12 @@ header .login-container .btn:hover{
   }
 
   .login-container #form-closed{
-    right: 9rem; top: 2.8rem;
+    right: 9rem; top: 3.2rem;
+    font-size: 4.5rem;
   }
 }
+
+
 
 @media screen and (max-width: 425px){
   html{
@@ -281,10 +289,44 @@ header .login-container .btn:hover{
   }
 
   .login-container #form-closed{
-    right: 2.7rem; top: 11.2rem;
+    right: 6.2rem; top: 14.2rem;
+    font-size: 4rem;
   }
 
   header .login-container .btn{
     width: 50%;
+  }
+
+  header .login-container form{
+    margin: 4.5rem;
+    border-radius: 2rem;
+  }
+
+  header .login-container .box{
+    width: 100%;
+    padding: .9rem 1.2rem;
+    margin: .6rem 0;
+    color: var(--light-black);
+    border: .1rem solid var(--light-black);
+    font-size: 1.7rem;
+  }
+}
+
+
+
+@media screen and (max-width: 320px){
+
+  html{
+    font-size: 45%;
+  }
+
+  header .login-container form{
+    margin: 1.2rem;
+    border-radius: 2rem;
+  }
+
+  .login-container #form-closed{
+    right: 2.7rem; top: 18rem;
+    font-size: 4rem;
   }
 }
